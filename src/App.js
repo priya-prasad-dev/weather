@@ -2,7 +2,7 @@ import React from 'react';
 import Forecast from './component/forecast';
 import Form from './component/form';
 import Heading from './component/heading';
-
+import './App.css';
 const api_key = "0eff8d7a963ffeb99b664d67b56212e4";
 
 class App extends React.Component {
@@ -44,7 +44,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='html'>
 
         <Heading />
         <Form loadWeather={this.getWeather} />
